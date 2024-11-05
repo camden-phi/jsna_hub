@@ -1,0 +1,86 @@
+---
+toc: false
+search: false
+page-layout: full
+title-block-banner: "#005288"
+title: "Explore the distribution and determinants of health and the impact of services of wellbeing in Camden"
+subtitle: "Maximise the impact of your service with evidence based decison making"
+listing:
+  - id: spotlight
+    contents: 
+      - support/courses/evidenced_based_working.qmd
+      - data/area_profiles.qmd
+      - themes.qmd
+    type: grid
+    fields: [image, title, subtitle]  
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+    page-size: 3
+    grid-columns: 3
+    grid-item-border: false
+    max-items: 3
+    image-height: 50px
+  - id: latest
+    contents: posts/**/*/index.qmd
+    template: ejs/latest.ejs.md
+    fields: [title, subtitle]  
+    sort-ui: false
+    filter-ui: false
+    page-size: 5
+    max-items: 5
+---
+
+::: {layout-ncol="3"}
+::: col1
+```{=html}
+<div class="card_front border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-subtitle mb-2"><b>Data</b></h4>
+    <p class="card-text">Explore public health related data covering the population of Camden.</p>
+    <a class="btn btn-primary" href="data.qmd" role="button">Explore data</a>
+  </div>
+</div>
+```
+:::
+
+::: col2
+```{=html}
+<div class="card_front border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-subtitle mb-2"><b>Reports</b></h4>
+    <p class="card-text">Explore our catalogue of research and analytics by theme.</p>
+    <a class="btn btn-primary" href="reports.qmd" role="button">View reports</a>
+  </div>
+</div>
+```
+:::
+
+::: col3
+```{=html}
+<div class="card_front border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-subtitle mb-2"><b>Support</b></h4>
+    <p class="card-text">Our tools and guides can help you apply evidence in your work.</p>
+    <a class="btn btn-primary" href="support.qmd" role="button">Learn more</a>
+  </div>
+</div>
+```
+:::
+:::
+
+::: {layout-ncol="2"}
+::: col5
+### Spotlight
+
+::: {#spotlight}
+:::
+:::
+
+::: col6
+### Latest publications
+
+::: {#latest}
+:::
+:::
+:::

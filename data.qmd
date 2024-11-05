@@ -1,0 +1,47 @@
+---
+title: "Data"
+subtitle: "Find information and intelligence"
+toc: false
+---
+
+::: {layout-ncol="3"}
+::: col1
+```{=html}
+<div class="card_front border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-subtitle mb-2"><b>Area profiles</b></h4>
+    <p class="card-text">Explore public health profiles for areas of Camden.</p>
+    <a class="btn btn-primary" href="data/area_profiles.qmd" role="button">View profiles</a>
+  </div>
+</div>
+```
+:::
+
+::: col2
+```{=html}
+<div class="card_front border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-subtitle mb-2"><b>Find data</b></h4>
+    <p class="card-text">Explore our data and links to external datasets.</p>
+    <a class="btn btn-primary" href="data/find_data.qmd" role="button">Browse data</a>
+  </div>
+</div>
+```
+:::
+
+::: col3
+```{=html}
+<div class="card_front border-primary mb-3" style="max-width: 20rem;">
+  <div class="card-body">
+    <h4 class="card-subtitle mb-2"><b>Key data</b></h4>
+    <p class="card-text">View key data on the health and wellbeing of Camden.</p>
+    <a class="btn btn-primary" href="data/key_data.qmd" role="button">Key data</a>
+  </div>
+</div>
+```
+:::
+:::
+
+## Health & Wellbeing in Camden
+
+-   value boxes of key data
