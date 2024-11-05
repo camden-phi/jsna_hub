@@ -1,0 +1,15 @@
+{
+  "hash": "06784a392689fe170fe1cadaeb845467",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Cancer [Public Summary]\"\nsubtitle: \"This is a summary of a internal report\"\nauthor: \"Public Health Evidence & Intelligence\"\nabstract-title: \"Summary\"\nabstract: \"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\"\ntitle-block-banner: \"#A04276\"\ntitle-block-banner-color: \"white\"\ndate: today\nbibliography: bibliography.bib\nimage: www/gpt.jpg\ncustom-type: \"Report {{< fa file-waveform >}} | People {{< fa people-group >}}\"\ncategories:\n - Public\n - Health\n - -Report\n---\n\n\n```{.r .cell-code}\ncat(\"---\", sprintf(\"margin-footer: |\n      Camden Public Health Intelligence\n      \n      [Provide feedback](https://www.google.com/search?q=\", knitr::current_input(), \"){target='_blank'}\"),\n    \"---\", sep = \"\\n\")\n```\n\n```\nWarning in sprintf(\"margin-footer: |\\n      Camden Public Health Intelligence\\n      \\n      [Provide feedback](https://www.google.com/search?q=\", : 2 arguments not used by format 'margin-footer: |\n      Camden Public Health Intelligence\n      \n      [Provide feedback](https://www.google.com/search?q='\n```\n\n---\nmargin-footer: |\n      Camden Public Health Intelligence\n      \n      [Provide feedback](https://www.google.com/search?q=\n---\n\n\nThe full report can be access here if you have permission to access it.\n\n## Intro\n\n## Findings\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

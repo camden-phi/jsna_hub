@@ -1,0 +1,10 @@
+name: website
+title:
+username: wyuill
+account: wyuill
+server: connect.prod.hcc.jrhosted.com
+hostUrl: https://connect.prod.hcc.jrhosted.com/__api__
+appId: 454
+bundleId: 51451
+url: https://connect.prod.hcc.jrhosted.com/example_site/
+version: 1

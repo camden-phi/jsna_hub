@@ -1,0 +1,6 @@
+---
+title: "Demography"
+image: www/male_and_female.svg
+image-height: 10px
+image-width: 10px
+---

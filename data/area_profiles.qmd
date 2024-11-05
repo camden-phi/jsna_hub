@@ -1,0 +1,5 @@
+---
+title: "Area profiles"
+subtitle: "View summaries of areas in Camden"
+image: www/gpt.jpg
+---

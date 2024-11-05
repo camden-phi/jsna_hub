@@ -1,0 +1,19 @@
+# options specified here will apply to all posts in this folder
+
+# prevents posts from re-rendering unless explicitly told to do so (for more, see https://quarto.org/docs/projects/code-execution.html#freeze)
+freeze: auto
+editor: visual
+toc: true
+format:
+  html:
+    title-block-banner: "#A04276"
+    title-block-banner-color: "white"
+    date: today
+    abstract-title: "Summary"
+    margin-footer: |
+      Camden Public Health Intelligence
+      
+      [Provide feedback](https://www.google.com){target='_blank'}
+    theme: zephyr
+    mainfont: Helvetica
+    toc: true

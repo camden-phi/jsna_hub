@@ -1,0 +1,102 @@
+---
+title: "Evidence based decision making"
+subtitle: "Learn how to understand and apply data"
+format:
+  html:
+    css: include/webex.css
+    include-after-body: include/webex.js
+---
+
+```{r, echo = FALSE, results='asis'}
+knitr::opts_chunk$set(echo = FALSE)
+library(webexercises)
+# Uncomment to change widget colours:
+#style_widgets(incorrect = "goldenrod", correct = "purple", highlight = "firebrick")
+```
+
+## Example Questions
+
+### Fill-In-The-Blanks (`fitb()`)
+
+-   2 + 2 is `r fitb(4)`
+
+```{r}
+x <- sample(2:8, 1)
+```
+
+-   The square root of `r x^2` is: `r fitb(x)`
+-   What is the letter after D? `r fitb("E", ignore_case = TRUE)`
+-   How do you load the tidyverse package? `r fitb(c("library( tidyverse )", "library( \"tidyverse\" )", "library( 'tidyverse' )"), ignore_ws = TRUE, width = "20")`
+-   Type a vowel: `r fitb(c("A", "E", "I", "O" , "U"), ignore_case = TRUE)`
+-   Type any 3 letters: `r fitb("^[a-zA-Z]{3}$", width = 3, regex = TRUE)`
+
+### Multiple Choice (`mcq()`)
+
+-   "Never gonna give you up, never gonna: `r mcq(c("let you go", "turn you down", "run away", answer = "let you down"))`"
+-   "I `r mcq(c(answer = "bless the rains", "guess it rains", "sense the rain"))` down in Africa" -Toto
+
+### True or False (`torf()`)
+
+-   True or False? You can permute values in a vector using `sample()`. `r torf(TRUE)`
+
+### Longer MCQs (`longmcq()`)
+
+**What is a p-value?**
+
+```{r}
+opts_p <- c(
+   "the probability that the null hypothesis is true",
+   answer = "the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true",
+   "the probability of making an error in your conclusion"
+)
+```
+
+`r longmcq(opts_p)`
+
+**What is true about a 95% confidence interval of the mean?**
+
+```{r}
+# use sample() to randomise the order
+opts_ci <- sample(c(
+  answer = "if you repeated the process many times, 95% of intervals calculated in this way contain the true mean",
+  "there is a 95% probability that the true mean lies within this range",
+  "95% of the data fall within this range"
+))
+```
+
+`r longmcq(opts_ci)`
+
+## Checked sections
+
+::: {.webex-check .webex-box}
+I am going to learn a lot: `r torf(TRUE)`
+
+```{r, results='asis'}
+opts <- c(
+   "the probability that the null hypothesis is true",
+   answer = "the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true",
+   "the probability of making an error in your conclusion"
+)
+
+cat("What is a p-value?", longmcq(opts))
+```
+:::
+
+## Hidden solutions and hints
+
+```{r}
+with(cars, plot(speed, dist))
+```
+
+`r hide("I need a hint")`
+
+See the documentation for `plot()` (`?plot`)
+
+`r unhide()`
+
+<!-- note: you could also just set webex.hide to TRUE -->
+
+```{r, echo = TRUE, eval = FALSE}
+#| webex.hide: "Click here to see the solution"
+plot(cars$speed, cars$dist)
+```

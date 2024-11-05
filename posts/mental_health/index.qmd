@@ -1,0 +1,22 @@
+---
+title: "Mental Health"
+subtitle: "Subtitle containing more information"
+author: "Public Health Evidence & Intelligence"
+abstract-title: "Summary"
+abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+title-block-banner: "#A04276"
+title-block-banner-color: "white"
+date: today
+bibliography: bibliography.bib
+image: www/gpt.jpg
+custom-type: "Data {{< fa chart-simple >}} | Services {{< fa hand-holding-medical >}}"
+keywords: [obesity, cancer]
+categories:
+ - Public
+ - Health
+ - -Data
+---
+
+## Intro
+
+## Findings
