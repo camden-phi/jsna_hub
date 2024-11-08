@@ -1,6 +1,0 @@
----
-title: "About"
-search: false
----
-
-About this site

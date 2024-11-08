@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.555">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Of Weak Intensity or Greater">
+
+<title>EpiCentre - Recent Earthquakes in Aotearoa New Zealand</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../camden-logo-white.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-dashboard/quarto-dashboard.js"></script>
+<script src="../../site_libs/quarto-dashboard/stickythead.js"></script>
+<script src="../../site_libs/quarto-dashboard/datatables.min.js" kdttablesentinel="true"></script>
+<script src="../../site_libs/quarto-dashboard/pdfmake.min.js" kdttablesentinel="true"></script>
+<script src="../../site_libs/quarto-dashboard/vfs_fonts.js" kdttablesentinel="true"></script>
+<script src="../../site_libs/quarto-dashboard/web-components.js" type="module"></script>
+<script src="../../site_libs/quarto-dashboard/components.js"></script>
+<link href="../../site_libs/quarto-dashboard/datatables.min.css" rel="stylesheet" kdttablesentinel="true">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+
+<script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+
+<script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+
+<link href="../../site_libs/leaflet-1.3.1/leaflet.css" rel="stylesheet">
+
+<script src="../../site_libs/leaflet-1.3.1/leaflet.js"></script>
+
+<link href="../../site_libs/leafletfix-1.0.0/leafletfix.css" rel="stylesheet">
+
+<script src="../../site_libs/proj4-2.6.2/proj4.min.js"></script>
+
+<script src="../../site_libs/Proj4Leaflet-1.0.1/proj4leaflet.js"></script>
+
+<link href="../../site_libs/rstudio_leaflet-1.3.1/rstudio_leaflet.css" rel="stylesheet">
+
+<script src="../../site_libs/leaflet-binding-2.2.2/leaflet.js"></script>
+
+
+
+</head>
+
+<body class="quarto-dashboard nav-fixed dashboard-fill fullcontent">
+
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../camden-logo-white.png" alt="" class="navbar-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">EpiCentre</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../data.html"> 
+<span class="menu-text">Data</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../reports.html"> 
+<span class="menu-text">Reports</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../support.html"> 
+<span class="menu-text">Support</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+          <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+<header id="quarto-dashboard-header">
+<nav class="navbar navbar-expand-md slim" data-bs-theme="dark">
+  <div class="navbar-container container-fluid">
+    <button class="navbar-toggler hidden" type="button" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-controls="dashboard-collapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>    
+
+
+    <div class="navbar-brand-container">       
+
+      <div class="navbar-title">
+        <div class="navbar-title-text"><a href="#">Recent Earthquakes in Aotearoa New Zealand</a></div>
+        
+        <div class="navbar-author">Of Weak Intensity or Greater</div>
+      </div>
+    </div>
+</div>
+</nav>
+</header></header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-layout-custom page-navbar quarto-dashboard-content bslib-gap-spacing html-fill-container bslib-page-fill">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+<!-- main -->
+
+<div class="bslib-grid-item html-fill-item bslib-grid" data-layout="fill" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, max-content) minmax(3em, max-content); grid-auto-columns: minmax(0, 1fr);">
+<div class="bslib-grid" style="display: grid; grid-template-columns: minmax(3em, 1fr) minmax(3em, 1fr);
+grid-auto-rows: minmax(0, 1fr);">
+<div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-primary showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="stopwatch" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-stopwatch"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Hours since last earthquake
+</p>
+<p class="value-box-value">
+17
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div><div class="card valuebox cell bslib-card html-fill-container bslib-value-box bg-secondary showcase-left-center" data-bslib-card-init="" data-require-bs-caller="card()">
+<div class="card-body html-fill-item html-fill-container">
+<div data-icon="activity" class="html-fill-item html-fill-container value-box-grid">
+<div class="value-box-showcase html-fill-item html-fill-container">
+
+<i class="bi bi-activity"></i></div>
+<div class="value-box-area">
+<p class="value-box-title">
+Earthquakes in the last 24 hours
+</p>
+<p class="value-box-value">
+2
+</p>
+</div>
+</div>
+</div>
+<script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+</div>
+<div class="bslib-grid" style="display: grid; grid-template-columns: ;
+grid-auto-rows: minmax(0, 1fr);">
+<div class="cell hidden">
+<div class="cell-output-display">
+<div id="xzsmnxgktu" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#xzsmnxgktu table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#xzsmnxgktu thead, #xzsmnxgktu tbody, #xzsmnxgktu tfoot, #xzsmnxgktu tr, #xzsmnxgktu td, #xzsmnxgktu th {
+  border-style: none;
+}
+
+#xzsmnxgktu p {
+  margin: 0;
+  padding: 0;
+}
+
+#xzsmnxgktu .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#xzsmnxgktu .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#xzsmnxgktu .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#xzsmnxgktu .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#xzsmnxgktu .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#xzsmnxgktu .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#xzsmnxgktu .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#xzsmnxgktu .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#xzsmnxgktu .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#xzsmnxgktu .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#xzsmnxgktu .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#xzsmnxgktu .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#xzsmnxgktu .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#xzsmnxgktu .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#xzsmnxgktu .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xzsmnxgktu .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#xzsmnxgktu .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#xzsmnxgktu .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#xzsmnxgktu .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xzsmnxgktu .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#xzsmnxgktu .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xzsmnxgktu .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#xzsmnxgktu .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xzsmnxgktu .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#xzsmnxgktu .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#xzsmnxgktu .gt_left {
+  text-align: left;
+}
+
+#xzsmnxgktu .gt_center {
+  text-align: center;
+}
+
+#xzsmnxgktu .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#xzsmnxgktu .gt_font_normal {
+  font-weight: normal;
+}
+
+#xzsmnxgktu .gt_font_bold {
+  font-weight: bold;
+}
+
+#xzsmnxgktu .gt_font_italic {
+  font-style: italic;
+}
+
+#xzsmnxgktu .gt_super {
+  font-size: 65%;
+}
+
+#xzsmnxgktu .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#xzsmnxgktu .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#xzsmnxgktu .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#xzsmnxgktu .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#xzsmnxgktu .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#xzsmnxgktu .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#xzsmnxgktu .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#xzsmnxgktu .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#xzsmnxgktu div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+
+<table class="gt_table caption-top table table-sm table-striped small" data-quarto-postprocess="true" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header gt_heading">
+<th colspan="5" class="gt_heading gt_title gt_font_normal gt_bottom_border"><p><strong>Last 10 Earthquakes</strong></p></th>
+</tr>
+<tr class="odd gt_col_headings">
+<th id="Magnitude" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Magnitude</th>
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"></th>
+<th id="Location" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col">Location</th>
+<th id="Depth" class="gt_col_heading gt_columns_bottom_border gt_right" data-quarto-table-cell-role="th" scope="col">Depth</th>
+</tr>
+</thead>
+<tbody class="gt_table_body">
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.1</td>
+<td class="gt_row gt_left" headers="days_ago">Today</td>
+<td class="gt_row gt_left" headers="pretty_time">07:12 AM</td>
+<td class="gt_row gt_left" headers="locality">Within 5 km of Porangahau</td>
+<td class="gt_row gt_right" headers="depth">16 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #DD513A; color: #FFFFFF">3.9</td>
+<td class="gt_row gt_left" headers="days_ago">Today</td>
+<td class="gt_row gt_left" headers="pretty_time">06:19 AM</td>
+<td class="gt_row gt_left" headers="locality">40 km north-west of Te Anau</td>
+<td class="gt_row gt_right" headers="depth">66 km</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.6</td>
+<td class="gt_row gt_left" headers="days_ago">Yesterday</td>
+<td class="gt_row gt_left" headers="pretty_time">10:12 AM</td>
+<td class="gt_row gt_left" headers="locality">Within 5 km of Seddon</td>
+<td class="gt_row gt_right" headers="depth">12 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.9</td>
+<td class="gt_row gt_left" headers="days_ago">Yesterday</td>
+<td class="gt_row gt_left" headers="pretty_time">01:59 AM</td>
+<td class="gt_row gt_left" headers="locality">20 km south-east of Te Kaha</td>
+<td class="gt_row gt_right" headers="depth">11 km</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.7</td>
+<td class="gt_row gt_left" headers="days_ago">2 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">10:57 PM</td>
+<td class="gt_row gt_left" headers="locality">15 km north-west of Castlepoint</td>
+<td class="gt_row gt_right" headers="depth">25 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.5</td>
+<td class="gt_row gt_left" headers="days_ago">2 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">06:07 PM</td>
+<td class="gt_row gt_left" headers="locality">15 km south of Te Kaha</td>
+<td class="gt_row gt_right" headers="depth">12 km</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.3</td>
+<td class="gt_row gt_left" headers="days_ago">3 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">02:29 PM</td>
+<td class="gt_row gt_left" headers="locality">5 km north of Opotiki</td>
+<td class="gt_row gt_right" headers="depth">6 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #DD513A; color: #FFFFFF">3.8</td>
+<td class="gt_row gt_left" headers="days_ago">3 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">04:30 AM</td>
+<td class="gt_row gt_left" headers="locality">35 km south-west of Haast</td>
+<td class="gt_row gt_right" headers="depth">5 km</td>
+</tr>
+<tr class="odd">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #DD513A; color: #FFFFFF">3.5</td>
+<td class="gt_row gt_left" headers="days_ago">4 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">10:34 PM</td>
+<td class="gt_row gt_left" headers="locality">10 km north-east of Arthur's Pass</td>
+<td class="gt_row gt_right" headers="depth">5 km</td>
+</tr>
+<tr class="even">
+<td class="gt_row gt_right" headers="magnitude" style="background-color: #932667; color: #FFFFFF">2.7</td>
+<td class="gt_row gt_left" headers="days_ago">4 days ago</td>
+<td class="gt_row gt_left" headers="pretty_time">01:10 PM</td>
+<td class="gt_row gt_left" headers="locality">5 km west of Porangahau</td>
+<td class="gt_row gt_right" headers="depth">12 km</td>
+</tr>
+</tbody><tfoot class="gt_sourcenotes">
+<tr class="even">
+<td colspan="5" class="gt_sourcenote"><p>Retrieved from the <a href="https://api.geonet.org.nz/">GeoNet API</a> at 2024/11/08 23:53 NZDT</p></td>
+</tr>
+</tfoot>
+
+</table>
+
+</div>
+</div>
+</div>
+</div>
+</div><div class="bslib-grid" style="display: grid; grid-template-rows: minmax(3em, 1fr); grid-auto-columns: minmax(0, 1fr);">
+<div class="card cell bslib-card html-fill-container" data-title="100 Most Recent Earthquakes" data-bslib-card-init="" data-require-bs-caller="card()" data-full-screen="false">
+<div class="card-header"><div class="card-title">100 Most Recent Earthquakes</div></div>
+<div class="card-body html-fill-item html-fill-container">
+<div class="cell-output-display html-fill-item html-fill-container">
+<div class="leaflet html-widget html-fill-item html-fill-container" id="htmlwidget-1ec2fde123adbfd34745" style="width:100%;height:406px;"></div>
+<script type="application/json" data-for="htmlwidget-1ec2fde123adbfd34745">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addCircleMarkers","args":[[-40.2991828918457,-45.1372985839844,-41.6918258666992,-37.8937008455499,-40.7540664672852,-37.8914947509766,-37.9719188875039,-44.122989654541,-42.8553123474121,-40.313606262207,-38.4499347761012,-41.2621536254883,-40.606372833252,-40.3379592895508,-37.8829498291016,-41.6113471984863,-37.7709922790527,-40.4631483032066,-37.0667457580566,-43.8837890625,-41.6111640930176,-40.8737716674805,-42.1068878173828,-37.7727699279785,-41.0620269775391,-37.7809867858887,-41.5688705444336,-39.4497375488281,-37.6392915087773,-39.9671897888184,-41.7804679870605,-39.5300941467285,-37.908504486084,-41.3416213989258,-45.1829986572266,-39.8804244995117,-42.2912750244141,-41.1088027954102,-41.120304107666,-43.7414054870605,-42.9013290405273,-42.9738998413086,-37.5459213256836,-42.9491729736328,-43.8783149719238,-39.9811363220215,-37.9612456103637,-42.7695808410645,-40.9373817443848,-37.899471282959,-43.7270622253418,-37.1025047302246,-38.3143577575684,-39.0314865112305,-40.5328216552734,-42.2477531433105,-42.3865356445312,-42.756923912145,-40.9122930661234,-37.6123237609863,-37.8904914855957,-41.0862312316895,-40.9433861056336,-40.3032722473145,-40.308536529541,-39.0018479590509,-40.3098640441895,-40.3183403015137,-40.4162254333496,-41.1977691650391,-36.6089897155762,-40.1307258605957,-38.7192573547363,-42.0115928649902,-38.1863861083984,-37.2639999389648,-44.3362426757812,-38.3280639648438,-41.6805152893066,-38.7179756164551,-38.7246322631836,-39.1996870863239,-40.6911256639677,-38.6400413513184,-38.6311492919922,-38.6297950744629,-38.6719869489999,-37.9202842712402,-37.9070053100586,-40.3064498901367,-41.061206817627,-40.2983245849609,-40.2947731018066,-40.3201484680176,-39.0973358154297,-41.7404174804688,-41.3137664794922,-40.7674980163574,-39.2805633544922,-40.316967010498],[176.656265258789,167.323577880859,174.122406005859,177.869188620599,176.134735107422,177.644927978516,177.277155706936,168.740325927734,171.64909362793,176.535110473633,177.228834843184,174.205429077148,176.176345825195,175.797088623047,176.928817749023,174.236038208008,176.842346191406,175.179313978543,177.423461914062,169.110076904297,174.237686157227,175.460632324219,172.86344909668,176.845687866211,175.507293701172,176.833221435547,174.384872436523,177.099166870117,178.306064036666,176.620513916016,172.640884399414,176.978225708008,178.302963256836,174.798858642578,167.35417175293,175.741470336914,172.782104492188,175.080978393555,175.0947265625,171.577239990234,171.672866821289,171.47998046875,178.833557128906,171.498428344727,173.183654785156,175.373016357422,177.792762286648,172.351531982422,174.184051513672,178.373947143555,170.098693847656,179.303573608398,178.199920654297,177.465301513672,175.108840942383,173.547164916992,172.896224975586,171.97856046908,174.704753332399,177.236190795898,176.261947631836,175.116500854492,173.955838986322,176.550506591797,176.546691894531,177.255657384793,176.553283691406,176.587814331055,176.479431152344,174.811157226562,177.275146484375,174.939331054688,177.972503662109,172.94514465332,178.283096313477,178.851364135742,168.162490844727,178.472381591797,174.258209228516,177.956481933594,177.962615966797,177.301052712505,175.951595655511,176.084686279297,176.065872192383,176.038787841797,176.08145498545,178.403594970703,178.400131225586,176.559387207031,175.087799072266,176.642929077148,176.636474609375,176.661193847656,177.506912231445,174.173034667969,174.449111938477,174.76594543457,173.892196655273,176.535263061523],[1.84479956466842,7.199548596068913,3.422582256888412,4.371498293794689,3.896568751168013,3.063205177208368,2.592432429723051,6.726466543310067,6.177235599844184,3.909127223888313,5.010358878923963,9.380376491747128,4.043306535041204,4.866337074579182,3.686272384975502,3.176761930554814,4.47938056226047,8.156229216563142,9.674761327233643,3.251337572501092,3.792688247197446,4.918578172707182,6.162787361352784,4.39114555967652,3.743205425455976,5.902276514908806,6.355921673869493,5.374528965961258,4.258950859874554,4.180834077060198,7.222779401013078,4.377968972145999,2.424131799512262,3.256152056731767,5.648080892132307,4.211721189917137,6.747036881260124,1.282246104192507,1.775152347838089,4.826659465022695,4.430257358344752,2.900363049061647,5.396975989076932,2.209167457207242,5.066725660831978,3.204489476199475,5.175993394349854,6.135986032716964,5.514964962381688,5.1656358087196,2.823576630920155,7.953593554284003,3.547605913708715,3.436094295613141,5.886648550379261,3.660207178783659,4.488285211949771,6.43152366953985,5.097392535948686,7.144512120140479,9.115380130748157,3.347831721741808,6.473420182413065,3.259781715387986,3.212293565250967,4.301301668139594,4.015609682149007,3.930338555565764,5.551404011114085,4.603598088063251,10,4.750018420995547,3.374104867726499,5.00039918425632,2.472641732522472,6.306860236519057,8.941884028070408,3.641252680026751,4.804295750651054,3.741459227791297,4.270884826770521,5.865693573340905,6.51153096239023,2.209226995204666,3.373721276534813,3.772161055743745,1,4.321699764984476,4.191496762609491,1.91706986633767,4.545287966730694,2.212103107420241,3.006852753537917,6.611668381907373,3.004049102031859,2.554949506226803,6.806437758823426,6.041685610097989,4.668123748102547,2.292902656469072],null,null,{"interactive":true,"className":"","stroke":false,"color":["#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#DD513A","#DD513A","#932667","#DD513A","#FCA50A","#932667","#DD513A","#932667","#932667","#932667","#FCA50A","#FCFFA4","#932667","#932667","#DD513A","#DD513A","#932667","#932667","#DD513A","#DD513A","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#DD513A","#932667","#DD513A","#420A68","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#DD513A","#DD513A","#DD513A","#DD513A","#932667","#FCA50A","#932667","#932667","#DD513A","#932667","#932667","#DD513A","#DD513A","#DD513A","#FCA50A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#DD513A","#932667","#FCFFA4","#DD513A","#932667","#DD513A","#932667","#DD513A","#FCA50A","#932667","#DD513A","#932667","#932667","#DD513A","#DD513A","#932667","#932667","#932667","#420A68","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#932667","#932667","#DD513A","#DD513A","#932667","#932667"],"weight":5,"opacity":0.5,"fill":true,"fillColor":["#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#DD513A","#DD513A","#932667","#DD513A","#FCA50A","#932667","#DD513A","#932667","#932667","#932667","#FCA50A","#FCFFA4","#932667","#932667","#DD513A","#DD513A","#932667","#932667","#DD513A","#DD513A","#DD513A","#932667","#932667","#DD513A","#932667","#932667","#932667","#DD513A","#932667","#DD513A","#420A68","#932667","#DD513A","#932667","#932667","#DD513A","#932667","#DD513A","#932667","#DD513A","#DD513A","#DD513A","#DD513A","#932667","#FCA50A","#932667","#932667","#DD513A","#932667","#932667","#DD513A","#DD513A","#DD513A","#FCA50A","#932667","#DD513A","#932667","#932667","#932667","#932667","#932667","#DD513A","#932667","#FCFFA4","#DD513A","#932667","#DD513A","#932667","#DD513A","#FCA50A","#932667","#DD513A","#932667","#932667","#DD513A","#DD513A","#932667","#932667","#932667","#420A68","#932667","#932667","#932667","#932667","#932667","#932667","#DD513A","#932667","#932667","#DD513A","#DD513A","#932667","#932667"],"fillOpacity":0.5},null,null,null,null,["2024-11-08 07:12 AM <br/> Magnitude: 2.1 <br/> Depth: 16  km","2024-11-08 06:19 AM <br/> Magnitude: 3.9 <br/> Depth: 66  km","2024-11-07 10:12 AM <br/> Magnitude: 2.6 <br/> Depth: 12  km","2024-11-07 01:59 AM <br/> Magnitude: 2.9 <br/> Depth: 11  km","2024-11-06 10:57 PM <br/> Magnitude: 2.7 <br/> Depth: 25  km","2024-11-06 06:07 PM <br/> Magnitude: 2.5 <br/> Depth: 12  km","2024-11-05 02:29 PM <br/> Magnitude: 2.3 <br/> Depth: 6  km","2024-11-05 04:30 AM <br/> Magnitude: 3.8 <br/> Depth: 5  km","2024-11-04 10:34 PM <br/> Magnitude: 3.5 <br/> Depth: 5  km","2024-11-04 01:10 PM <br/> Magnitude: 2.7 <br/> Depth: 12  km","2024-11-04 02:59 AM <br/> Magnitude: 3.1 <br/> Depth: 34  km","2024-11-04 02:58 AM <br/> Magnitude: 4.9 <br/> Depth: 33  km","2024-11-03 03:59 PM <br/> Magnitude: 2.8 <br/> Depth: 17  km","2024-11-03 02:12 PM <br/> Magnitude: 3.1 <br/> Depth: 30  km","2024-11-03 05:35 AM <br/> Magnitude: 2.7 <br/> Depth: 6  km","2024-11-03 04:36 AM <br/> Magnitude: 2.5 <br/> Depth: 8  km","2024-11-03 03:53 AM <br/> Magnitude: 2.9 <br/> Depth: 8  km","2024-11-03 01:29 AM <br/> Magnitude: 4.3 <br/> Depth: 63  km","2024-11-03 01:28 AM <br/> Magnitude: 5 <br/> Depth: 129  km","2024-11-03 12:41 AM <br/> Magnitude: 2.5 <br/> Depth: 3  km","2024-11-02 09:06 PM <br/> Magnitude: 2.7 <br/> Depth: 9  km","2024-11-02 07:52 PM <br/> Magnitude: 3.1 <br/> Depth: 19  km","2024-11-02 06:44 PM <br/> Magnitude: 3.5 <br/> Depth: 40  km","2024-11-02 06:42 PM <br/> Magnitude: 2.9 <br/> Depth: 9  km","2024-11-02 09:12 AM <br/> Magnitude: 2.7 <br/> Depth: 7  km","2024-10-31 07:21 PM <br/> Magnitude: 3.4 <br/> Depth: 8  km","2024-10-31 02:17 AM <br/> Magnitude: 3.6 <br/> Depth: 5  km","2024-10-31 12:57 AM <br/> Magnitude: 3.2 <br/> Depth: 27  km","2024-10-30 09:04 AM <br/> Magnitude: 2.8 <br/> Depth: 5  km","2024-10-30 06:33 AM <br/> Magnitude: 2.8 <br/> Depth: 32  km","2024-10-29 06:47 PM <br/> Magnitude: 4 <br/> Depth: 60  km","2024-10-29 02:59 PM <br/> Magnitude: 2.9 <br/> Depth: 29  km","2024-10-29 11:59 AM <br/> Magnitude: 2.3 <br/> Depth: 8  km","2024-10-28 10:39 PM <br/> Magnitude: 2.5 <br/> Depth: 26  km","2024-10-28 09:05 PM <br/> Magnitude: 3.3 <br/> Depth: 54  km","2024-10-28 10:17 AM <br/> Magnitude: 2.8 <br/> Depth: 32  km","2024-10-27 08:45 PM <br/> Magnitude: 3.8 <br/> Depth: 6  km","2024-10-26 03:50 AM <br/> Magnitude: 1.9 <br/> Depth: 4  km","2024-10-26 12:58 AM <br/> Magnitude: 2.1 <br/> Depth: 5  km","2024-10-25 10:33 PM <br/> Magnitude: 3 <br/> Depth: 14  km","2024-10-25 03:30 PM <br/> Magnitude: 2.9 <br/> Depth: 5  km","2024-10-25 10:41 AM <br/> Magnitude: 2.4 <br/> Depth: 3  km","2024-10-25 06:30 AM <br/> Magnitude: 3.3 <br/> Depth: 22  km","2024-10-24 11:16 AM <br/> Magnitude: 2.2 <br/> Depth: 5  km","2024-10-23 10:06 PM <br/> Magnitude: 3.1 <br/> Depth: 12  km","2024-10-23 09:41 PM <br/> Magnitude: 2.5 <br/> Depth: 13  km","2024-10-22 04:51 PM <br/> Magnitude: 3.2 <br/> Depth: 6  km","2024-10-22 03:47 AM <br/> Magnitude: 3.5 <br/> Depth: 19  km","2024-10-22 12:42 AM <br/> Magnitude: 3.3 <br/> Depth: 33  km","2024-10-20 04:04 PM <br/> Magnitude: 3.2 <br/> Depth: 9  km","2024-10-20 12:27 AM <br/> Magnitude: 2.4 <br/> Depth: 2  km","2024-10-19 04:47 AM <br/> Magnitude: 4.3 <br/> Depth: 12  km","2024-10-18 11:50 PM <br/> Magnitude: 2.6 <br/> Depth: 24  km","2024-10-18 11:43 PM <br/> Magnitude: 2.6 <br/> Depth: 25  km","2024-10-18 11:41 AM <br/> Magnitude: 3.4 <br/> Depth: 20  km","2024-10-18 07:46 AM <br/> Magnitude: 2.6 <br/> Depth: 15  km","2024-10-18 12:13 AM <br/> Magnitude: 2.9 <br/> Depth: 5  km","2024-10-17 05:23 AM <br/> Magnitude: 3.6 <br/> Depth: 48  km","2024-10-17 02:09 AM <br/> Magnitude: 3.1 <br/> Depth: 15  km","2024-10-16 10:30 PM <br/> Magnitude: 3.9 <br/> Depth: 5  km","2024-10-16 10:05 PM <br/> Magnitude: 4.8 <br/> Depth: 168  km","2024-10-16 08:33 PM <br/> Magnitude: 2.5 <br/> Depth: 25  km","2024-10-16 04:06 PM <br/> Magnitude: 3.7 <br/> Depth: 34  km","2024-10-16 03:02 PM <br/> Magnitude: 2.5 <br/> Depth: 14  km","2024-10-16 10:12 AM <br/> Magnitude: 2.5 <br/> Depth: 14  km","2024-10-16 05:34 AM <br/> Magnitude: 2.9 <br/> Depth: 5  km","2024-10-16 12:58 AM <br/> Magnitude: 2.8 <br/> Depth: 15  km","2024-10-15 09:56 PM <br/> Magnitude: 2.7 <br/> Depth: 14  km","2024-10-15 10:35 AM <br/> Magnitude: 3.3 <br/> Depth: 13  km","2024-10-15 02:51 AM <br/> Magnitude: 3 <br/> Depth: 21  km","2024-10-14 05:01 PM <br/> Magnitude: 5.2 <br/> Depth: 232  km","2024-10-14 02:24 PM <br/> Magnitude: 3 <br/> Depth: 14  km","2024-10-14 03:53 AM <br/> Magnitude: 2.6 <br/> Depth: 24  km","2024-10-14 12:45 AM <br/> Magnitude: 3.1 <br/> Depth: 37  km","2024-10-13 10:10 PM <br/> Magnitude: 2.3 <br/> Depth: 10  km","2024-10-13 08:44 PM <br/> Magnitude: 3.6 <br/> Depth: 12  km","2024-10-13 02:44 PM <br/> Magnitude: 4.7 <br/> Depth: 5  km","2024-10-13 09:04 AM <br/> Magnitude: 2.6 <br/> Depth: 20  km","2024-10-13 07:56 AM <br/> Magnitude: 3 <br/> Depth: 12  km","2024-10-12 10:33 PM <br/> Magnitude: 2.7 <br/> Depth: 26  km","2024-10-12 10:11 PM <br/> Magnitude: 2.9 <br/> Depth: 26  km","2024-10-12 02:09 AM <br/> Magnitude: 3.4 <br/> Depth: 8  km","2024-10-12 02:08 AM <br/> Magnitude: 3.7 <br/> Depth: 30  km","2024-10-11 05:13 PM <br/> Magnitude: 2.2 <br/> Depth: 11  km","2024-10-11 04:28 PM <br/> Magnitude: 2.6 <br/> Depth: 5  km","2024-10-11 04:26 PM <br/> Magnitude: 2.7 <br/> Depth: 1  km","2024-10-11 03:10 PM <br/> Magnitude: 1.8 <br/> Depth: 5  km","2024-10-11 04:30 AM <br/> Magnitude: 2.9 <br/> Depth: 15  km","2024-10-11 04:11 AM <br/> Magnitude: 2.8 <br/> Depth: 10  km","2024-10-09 03:29 PM <br/> Magnitude: 2.1 <br/> Depth: 14  km","2024-10-08 12:17 PM <br/> Magnitude: 2.9 <br/> Depth: 25  km","2024-10-08 06:09 AM <br/> Magnitude: 2.2 <br/> Depth: 16  km","2024-10-08 04:23 AM <br/> Magnitude: 2.4 <br/> Depth: 17  km","2024-10-08 01:41 AM <br/> Magnitude: 3.7 <br/> Depth: 15  km","2024-10-07 10:53 AM <br/> Magnitude: 2.4 <br/> Depth: 19  km","2024-10-07 07:42 AM <br/> Magnitude: 2.3 <br/> Depth: 11  km","2024-10-07 02:23 AM <br/> Magnitude: 3.8 <br/> Depth: 31  km","2024-10-07 01:22 AM <br/> Magnitude: 3.5 <br/> Depth: 34  km","2024-10-06 09:47 PM <br/> Magnitude: 3 <br/> Depth: 14  km","2024-10-06 07:28 PM <br/> Magnitude: 2.2 <br/> Depth: 11  km"],{"textsize":"15px"},null]},{"method":"addLegend","args":[{"colors":["#000004","#420A68","#932667","#DD513A","#FCA50A","#FCFFA4"],"labels":["<1","1","2","3","4",">5"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"topright","type":"unknown","title":"Magnitude","extra":null,"layerId":null,"className":"info legend","group":null}]},{"method":"addTiles","args":["http://services.arcgisonline.com/arcgis/rest/services/Canvas/World_Light_Gray_Base/MapServer/tile/{z}/{y}/{x}",null,null,{"minZoom":5,"maxZoom":10,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":1,"detectRetina":false}]}],"limits":{"lat":[-45.1829986572266,-36.6089897155762],"lng":[167.323577880859,179.303573608398]}},"evals":[],"jsHooks":[]}</script>
+</div>
+</div>
+<bslib-tooltip placement="auto" bsoptions="[]" data-require-bs-version="5" data-require-bs-caller="tooltip()">
+    <template>Expand</template>
+    <span class="bslib-full-screen-enter badge rounded-pill">
+        <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24" style="height:1em;width:1em;" aria-hidden="true" role="img"><path d="M20 5C20 4.4 19.6 4 19 4H13C12.4 4 12 3.6 12 3C12 2.4 12.4 2 13 2H21C21.6 2 22 2.4 22 3V11C22 11.6 21.6 12 21 12C20.4 12 20 11.6 20 11V5ZM4 19C4 19.6 4.4 20 5 20H11C11.6 20 12 20.4 12 21C12 21.6 11.6 22 11 22H3C2.4 22 2 21.6 2 21V13C2 12.4 2.4 12 3 12C3.6 12 4 12.4 4 13V19Z"></path></svg>
+    </span>
+</bslib-tooltip><script data-bslib-card-init="">bslib.Card.initializeAllCards();</script></div>
+
+
+<div id="3ade8a4a-fb1d-4a6c-8409-ac45482d5fc9" class="hidden">
+
+</div>
+</div>
+</div>
+
+
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp("https:\/\/camden-phi\.github\.io\/jsna_hub\/");
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      &nbsp;
+    </div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+ © Camden 2024
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+
+<script type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (_event) {
+  if (window.bslib.Card) {
+    window.bslib.Card.initializeAllCards();
+  }
+}); 
+</script>
+  
+
+
+
+</body></html>

@@ -1,8 +1,0 @@
----
-title: "Data"
----
-## Internal data
-
-[View dashboards](dashboards/dashboard.qmd)
-
-## External data
