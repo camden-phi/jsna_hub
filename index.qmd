@@ -3,7 +3,7 @@ toc: false
 search: false
 page-layout: full
 title-block-banner: "#005288"
-title: "Explore the distribution and determinants of health and the impact of services of wellbeing in Camden"
+title: "Explore the distribution and determinants of health and the impact of services on wellbeing in Camden"
 subtitle: "Maximise the impact of your service with evidence based decison making"
 listing:
   - id: spotlight
@@ -69,18 +69,22 @@ listing:
 :::
 :::
 
-::: {layout-ncol="2"}
-::: col5
+---
+
+::: {.grid}
+
+::: {.g-col-8}
 ### Spotlight
 
 ::: {#spotlight}
 :::
 :::
 
-::: col6
+::: {.g-col-4}
 ### Latest publications
 
 ::: {#latest}
 :::
 :::
+
 :::
