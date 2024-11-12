@@ -9,7 +9,7 @@ website:
       - text: "© Camden 2024"
   favicon: camden-logo-white.png
   navbar:
-    background: black
+    background: "#3D5174"
     foreground: white
     logo: camden-logo-white.png
     left:
@@ -28,6 +28,9 @@ format:
     theme: zephyr
     css: styles.css
     toc: true
+    mainfont: Arial
+    linkcolor: "#29344c"
+    fontcolor: "#4A4949"
 
 editor: visual
 

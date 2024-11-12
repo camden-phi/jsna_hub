@@ -6,8 +6,8 @@ editor: visual
 toc: true
 format:
   html:
-    title-block-banner: "#A04276"
-    title-block-banner-color: "white"
+    title-block-banner: "#DFCEDE"
+    title-block-banner-color: "#29344c"
     date: today
     abstract-title: "Summary"
     margin-footer: |

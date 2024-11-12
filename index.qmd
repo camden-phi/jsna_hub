@@ -2,7 +2,8 @@
 toc: false
 search: false
 page-layout: full
-title-block-banner: "#005288"
+title-block-banner: "#A9D6D8"
+title-block-banner-color: "#29344c"
 title: "Explore the distribution and determinants of health and the impact of services on wellbeing in Camden"
 subtitle: "Maximise the impact of your service with evidence based decison making"
 listing:
@@ -12,7 +13,7 @@ listing:
       - data/area_profiles.qmd
       - themes.qmd
     type: grid
-    fields: [image, title, subtitle]  
+    fields: [title, subtitle]  
     sort: "date desc"
     sort-ui: false
     filter-ui: false
@@ -27,8 +28,8 @@ listing:
     fields: [title, subtitle]  
     sort-ui: false
     filter-ui: false
-    page-size: 5
-    max-items: 5
+    page-size: 4
+    max-items: 4
 ---
 
 ::: {layout-ncol="3"}
