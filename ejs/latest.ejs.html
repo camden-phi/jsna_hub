@@ -133,10 +133,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 &lt;% for (const item of items) { %&gt;
-  <a href="<%- item.path %>" style="font-weight: bold; text-decoration: none; border-bottom: 1px solid #522E91; color: #522E91">&lt;%= item.title %&gt;</a>
-    &lt;%= item['categories'] %&gt;
-    <br>
-  <hr>
+  <a href="<%- item.path %>"><b>&lt;%= item.title %&gt;</b> <i><small>(&lt;%= item.date %&gt;)</small></i></a>
+    <br><p></p>
 &lt;% } %&gt;
 
 

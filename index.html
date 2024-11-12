@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>EpiCentre - Explore the distribution and determinants of health and the impact of services of wellbeing in Camden</title>
+<title>EpiCentre - Explore the distribution and determinants of health and the impact of services on wellbeing in Camden</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -79,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
       searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
     };
@@ -107,9 +107,10 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-language","listing-freeze","listing-toc","listing-title","listing-subtitle","listing-author","listing-margin-footer","listing-abstract","listing-bibliography","listing-image","listing-custom-type","listing-keywords","listing-categories","listing-path","listing-outputHref","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-abstract-title","listing-title-block-banner","listing-title-block-banner-color","listing-date","listing-date-modified"],
+      valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      page: 4,
+    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
+      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-language","listing-freeze","listing-toc","listing-title","listing-subtitle","listing-author","listing-abstract-title","listing-abstract","listing-date","listing-bibliography","listing-image","listing-custom-type","listing-keywords","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -128,8 +129,19 @@ ul.task-list li input[type="checkbox"] {
   </script>
 <style>
 
+      .quarto-title-block .quarto-title-banner h1,
+      .quarto-title-block .quarto-title-banner h2,
+      .quarto-title-block .quarto-title-banner h3,
+      .quarto-title-block .quarto-title-banner h4,
+      .quarto-title-block .quarto-title-banner h5,
+      .quarto-title-block .quarto-title-banner h6
+      {
+        color: #29344c;
+      }
+
       .quarto-title-block .quarto-title-banner {
-        background: #005288;
+        color: #29344c;
+background: #A9D6D8;
       }
 </style>
 
@@ -217,7 +229,7 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-page">
-      <h1 class="title">Explore the distribution and determinants of health and the impact of services of wellbeing in Camden</h1>
+      <h1 class="title">Explore the distribution and determinants of health and the impact of services on wellbeing in Camden</h1>
             <p class="subtitle lead">Maximise the impact of your service with evidence based decison making</p>
                       </div>
   </div>
@@ -276,19 +288,15 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div>
-
-</div>
-<div class="quarto-layout-panel" data-layout-ncol="2">
-<div class="quarto-layout-row">
-<section id="spotlight" class="level3 col5 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<hr>
+<div class="grid">
+<section id="spotlight" class="level3 g-col-8">
 <h3 class="anchored" data-anchor-id="spotlight">Spotlight</h3>
 <div id="listing-spotlight" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
 <div class="g-col-1" data-index="0" data-listing-file-modified-sort="1721296284326" data-listing-reading-time-sort="2" data-listing-word-count-sort="388">
 <a href="./support/courses/evidenced_based_working.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top"><img src="support\courses\evidenced_based_working_files\figure-html\unnamed-chunk-6-1.png" style="height: 50px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Evidence based decision making
@@ -303,9 +311,6 @@ Learn how to understand and apply data
 <div class="g-col-1" data-index="1" data-listing-file-modified-sort="1721296275117" data-listing-reading-time-sort="1" data-listing-word-count-sort="1">
 <a href="./data/area_profiles.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="./data/www/gpt.jpg" class="thumbnail-image card-img" style="height: 50px;">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Area profiles
@@ -320,9 +325,6 @@ View summaries of areas in Camden
 <div class="g-col-1" data-index="2" data-listing-file-modified-sort="1721296215073" data-listing-reading-time-sort="2" data-listing-word-count-sort="344">
 <a href="./themes.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
-<p class="card-img-top">
-<img src="./camden-logo-white.png" class="thumbnail-image card-img" style="height: 50px;">
-</p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Themes
@@ -340,41 +342,27 @@ No matching items
 </div>
 </div>
 </section>
-<section id="latest-publications" class="level3 col6 quarto-layout-cell" style="flex-basis: 50.0%;justify-content: flex-start;">
+<section id="latest-publications" class="level3 g-col-4">
 <h3 class="anchored" data-anchor-id="latest-publications">Latest publications</h3>
 <div id="listing-latest" class="quarto-listing quarto-listing-container-custom">
 
-  <a href="./posts/cancer/index.html" style="font-weight: bold; text-decoration: none; border-bottom: 1px solid #522E91; color: #522E91">Cancer [Public Summary]</a>
-    Public,Health,-Report
-    <br>
-  <hr>
+  <a href="./posts/cancer/index.html"><b>Cancer [Public Summary]</b> <i><small>(Nov 12, 2024)</small></i></a>
+    <br><p></p>
 
-  <a href="./posts/child_obesity/index.html" style="font-weight: bold; text-decoration: none; border-bottom: 1px solid #522E91; color: #522E91">Child Obesity</a>
-    Public,Health,-Report
-    <br>
-  <hr>
+  <a href="./posts/child_obesity/index.html"><b>Child Obesity</b> <i><small>(Nov 12, 2024)</small></i></a>
+    <br><p></p>
 
-  <a href="./posts/falls/index.html" style="font-weight: bold; text-decoration: none; border-bottom: 1px solid #522E91; color: #522E91">Falls</a>
-    Public,Health,-Report
-    <br>
-  <hr>
+  <a href="./posts/falls/index.html"><b>Falls</b> <i><small>(Nov 12, 2024)</small></i></a>
+    <br><p></p>
 
-  <a href="./posts/mental_health/index.html" style="font-weight: bold; text-decoration: none; border-bottom: 1px solid #522E91; color: #522E91">Mental Health</a>
-    Public,Health,-Data
-    <br>
-  <hr>
-
-  <a href="./posts/life_expectancy/index.html" style="font-weight: bold; text-decoration: none; border-bottom: 1px solid #522E91; color: #522E91">Variation in Healthly Life Expectancy</a>
-    Public,Health,-JSNA
-    <br>
-  <hr>
+  <a href="./posts/mental_health/index.html"><b>Mental Health</b> <i><small>(Nov 12, 2024)</small></i></a>
+    <br><p></p>
 
 <div class="listing-no-matching d-none">
 No matching items
 </div>
 </div>
 </section>
-</div>
 </div>
 
 
