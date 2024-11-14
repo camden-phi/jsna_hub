@@ -67,14 +67,14 @@
     "href": "support/courses/evidenced_based_working.html",
     "title": "Evidence based decision making",
     "section": "",
-    "text": "2 + 2 is \n\n\nThe square root of 25 is: \nWhat is the letter after D? \nHow do you load the tidyverse package? \nType a vowel: \nType any 3 letters: \n\n\n\n\n\n“Never gonna give you up, never gonna: let you goturn you downrun awaylet you down”\n“I bless the rainsguess it rainssense the rain down in Africa” -Toto\n\n\n\n\n\nTrue or False? You can permute values in a vector using sample(). TRUEFALSE\n\n\n\n\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\nWhat is true about a 95% confidence interval of the mean?\n\n 95% of the data fall within this range if you repeated the process many times, 95% of intervals calculated in this way contain the true mean there is a 95% probability that the true mean lies within this range"
+    "text": "2 + 2 is \n\n\nThe square root of 64 is: \nWhat is the letter after D? \nHow do you load the tidyverse package? \nType a vowel: \nType any 3 letters: \n\n\n\n\n\n“Never gonna give you up, never gonna: let you goturn you downrun awaylet you down”\n“I bless the rainsguess it rainssense the rain down in Africa” -Toto\n\n\n\n\n\nTrue or False? You can permute values in a vector using sample(). TRUEFALSE\n\n\n\n\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\nWhat is true about a 95% confidence interval of the mean?\n\n 95% of the data fall within this range there is a 95% probability that the true mean lies within this range if you repeated the process many times, 95% of intervals calculated in this way contain the true mean"
   },
   {
     "objectID": "support/courses/evidenced_based_working.html#example-questions",
     "href": "support/courses/evidenced_based_working.html#example-questions",
     "title": "Evidence based decision making",
     "section": "",
-    "text": "2 + 2 is \n\n\nThe square root of 25 is: \nWhat is the letter after D? \nHow do you load the tidyverse package? \nType a vowel: \nType any 3 letters: \n\n\n\n\n\n“Never gonna give you up, never gonna: let you goturn you downrun awaylet you down”\n“I bless the rainsguess it rainssense the rain down in Africa” -Toto\n\n\n\n\n\nTrue or False? You can permute values in a vector using sample(). TRUEFALSE\n\n\n\n\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\nWhat is true about a 95% confidence interval of the mean?\n\n 95% of the data fall within this range if you repeated the process many times, 95% of intervals calculated in this way contain the true mean there is a 95% probability that the true mean lies within this range"
+    "text": "2 + 2 is \n\n\nThe square root of 64 is: \nWhat is the letter after D? \nHow do you load the tidyverse package? \nType a vowel: \nType any 3 letters: \n\n\n\n\n\n“Never gonna give you up, never gonna: let you goturn you downrun awaylet you down”\n“I bless the rainsguess it rainssense the rain down in Africa” -Toto\n\n\n\n\n\nTrue or False? You can permute values in a vector using sample(). TRUEFALSE\n\n\n\n\nWhat is a p-value?\n\n the probability that the null hypothesis is true the probability of the observed, or more extreme, data, under the assumption that the null-hypothesis is true the probability of making an error in your conclusion\n\nWhat is true about a 95% confidence interval of the mean?\n\n 95% of the data fall within this range there is a 95% probability that the true mean lies within this range if you repeated the process many times, 95% of intervals calculated in this way contain the true mean"
   },
   {
     "objectID": "support/courses/evidenced_based_working.html#checked-sections",
@@ -126,46 +126,18 @@
     "text": "Findings"
   },
   {
-    "objectID": "posts/cancer/index.html",
-    "href": "posts/cancer/index.html",
-    "title": "Cancer [Public Summary]",
-    "section": "",
-    "text": "The full report can be access here if you have permission to access it."
-  },
-  {
-    "objectID": "posts/cancer/index.html#intro",
-    "href": "posts/cancer/index.html#intro",
-    "title": "Cancer [Public Summary]",
-    "section": "Intro",
-    "text": "Intro"
-  },
-  {
-    "objectID": "posts/cancer/index.html#findings",
-    "href": "posts/cancer/index.html#findings",
-    "title": "Cancer [Public Summary]",
+    "objectID": "posts/child_obesity/index.html#findings",
+    "href": "posts/child_obesity/index.html#findings",
+    "title": "Child Obesity",
     "section": "Findings",
     "text": "Findings"
   },
   {
-    "objectID": "ejs/latest.ejs.html",
-    "href": "ejs/latest.ejs.html",
-    "title": "EpiCentre",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n  &lt;%= item.title %&gt; (&lt;%= item.date %&gt;)\n    \n&lt;% } %&gt;\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "data/key_data.html",
-    "href": "data/key_data.html",
-    "title": "Key data",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "data/area_profiles.html",
-    "href": "data/area_profiles.html",
-    "title": "Area profiles",
-    "section": "",
-    "text": "Back to top"
+    "objectID": "data.html#health-wellbeing-in-camden",
+    "href": "data.html#health-wellbeing-in-camden",
+    "title": "Data",
+    "section": "Health & Wellbeing in Camden",
+    "text": "Health & Wellbeing in Camden\n\nvalue boxes of key data"
   },
   {
     "objectID": "data/find_data.html",
@@ -189,18 +161,95 @@
     "text": "External data"
   },
   {
-    "objectID": "data.html#health-wellbeing-in-camden",
-    "href": "data.html#health-wellbeing-in-camden",
-    "title": "Data",
-    "section": "Health & Wellbeing in Camden",
-    "text": "Health & Wellbeing in Camden\n\nvalue boxes of key data"
+    "objectID": "data/area_profiles.html",
+    "href": "data/area_profiles.html",
+    "title": "Area profiles",
+    "section": "",
+    "text": "Back to top"
   },
   {
-    "objectID": "posts/child_obesity/index.html#findings",
-    "href": "posts/child_obesity/index.html#findings",
-    "title": "Child Obesity",
+    "objectID": "data/key_data.html",
+    "href": "data/key_data.html",
+    "title": "Key data",
+    "section": "",
+    "text": "Back to top"
+  },
+  {
+    "objectID": "ejs/latest.ejs.html",
+    "href": "ejs/latest.ejs.html",
+    "title": "EpiCentre",
+    "section": "",
+    "text": "&lt;% for (const item of items) { %&gt;\n  &lt;%= item.title %&gt; (&lt;%= item.date %&gt;)\n    \n&lt;% } %&gt;\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "posts/cancer/index.html",
+    "href": "posts/cancer/index.html",
+    "title": "Cancer [Public Summary]",
+    "section": "",
+    "text": "The full report can be access here if you have permission to access it."
+  },
+  {
+    "objectID": "posts/cancer/index.html#intro",
+    "href": "posts/cancer/index.html#intro",
+    "title": "Cancer [Public Summary]",
+    "section": "Intro",
+    "text": "Intro"
+  },
+  {
+    "objectID": "posts/cancer/index.html#findings",
+    "href": "posts/cancer/index.html#findings",
+    "title": "Cancer [Public Summary]",
     "section": "Findings",
     "text": "Findings"
+  },
+  {
+    "objectID": "posts/demographics/index.html",
+    "href": "posts/demographics/index.html",
+    "title": "JSNA Summary",
+    "section": "",
+    "text": "::: {.callout-tip} Camden’s Joint Strategic Needs Assessment explores the health and wellbeing of the borough’s residents and highlights areas of good practice and where opportunities to do more exist, including tacking inequalities. The JSNA helps public bodies decide what type of local services to commission. :::\nThis is JSNA summary is a concise summary of the demographics of residents of Camden. It presents data on the size and structure of the population and a range of groups within it, for example different ethnic groups."
+  },
+  {
+    "objectID": "posts/demographics/index.html#camdens-jsna",
+    "href": "posts/demographics/index.html#camdens-jsna",
+    "title": "JSNA Summary",
+    "section": "",
+    "text": "::: {.callout-tip} Camden’s Joint Strategic Needs Assessment explores the health and wellbeing of the borough’s residents and highlights areas of good practice and where opportunities to do more exist, including tacking inequalities. The JSNA helps public bodies decide what type of local services to commission. :::\nThis is JSNA summary is a concise summary of the demographics of residents of Camden. It presents data on the size and structure of the population and a range of groups within it, for example different ethnic groups."
+  },
+  {
+    "objectID": "posts/demographics/index.html#camdens-population-has-fallen-but-is-expected-to-rebound",
+    "href": "posts/demographics/index.html#camdens-population-has-fallen-but-is-expected-to-rebound",
+    "title": "JSNA Summary",
+    "section": "Camden’s population has fallen but is expected to rebound",
+    "text": "Camden’s population has fallen but is expected to rebound\nCamden’s population slowly fell until around 2020 when it started to increase again, with further rises predicted. While the size of the population has fluctuated by relatively small amounts, the individuals that comprise the population change frequently with Camden having a high rate of migration within the UK and internationally.\n\nNote on the 2021 Census\nPrior to the 2021 Census Camden was estimated to have a population of around 280,000 based on projections from the 2011 Census. The 2021 Census found the population was substantially lower. This may have happened for a number of reasons, such as temporary relocation away from the borough during the Covid-19 pandemic with some evidence this is now reversing. [1] While adjustments have been made by ONS, including backdating some population estimates, it can be unclear when indicators are using the high or low version of the population and consequently there can be substantial variation in some indicators depending on source, version, or between time periods even where there has been little change in the count of a metric."
+  },
+  {
+    "objectID": "posts/demographics/index.html#camdens-population-is-ageing-though-young-adults-will-remain-the-largest-group",
+    "href": "posts/demographics/index.html#camdens-population-is-ageing-though-young-adults-will-remain-the-largest-group",
+    "title": "JSNA Summary",
+    "section": "Camden’s population is ageing, though young adults will remain the largest group",
+    "text": "Camden’s population is ageing, though young adults will remain the largest group\n\n\n\n\n\n\n\n\n\nThe composition of Camden’s population has changed considerably and this is expected to continue. Between 2013 and 2023 the proportion of residents aged under 18 fell from 17.5328986% to 16.3867959% and it is expected to fall further to 13.9797361% by 2041. Conversely, the proportion of residents aged 65 and over is expected to rise from 11.8595275% in 2023 to 16.3119058% by 2041. The proportion of the population of working is age is expected to remain relatively constant."
+  },
+  {
+    "objectID": "posts/demographics/index.html#camdens-is-one-of-the-most-diverse-places-in-the-country-though-the-majority-of-the-population-identify-as-white",
+    "href": "posts/demographics/index.html#camdens-is-one-of-the-most-diverse-places-in-the-country-though-the-majority-of-the-population-identify-as-white",
+    "title": "JSNA Summary",
+    "section": "Camden’s is one of the most diverse places in the country, though the majority of the population identify as White",
+    "text": "Camden’s is one of the most diverse places in the country, though the majority of the population identify as White\n\n\n\n\n\n\n\n\n\nAround 60% of Camden’s population is White, with White British comprising 40%. Outside of the White ethnic group Camden’s population is comprised of Asian, Asian British or Asian Welsh (20%), Black, Black British, Black Welsh, Caribbean or African (9%), Mixed or Multiple ethnic groups (7%), and Other ethnic group (7%) broad ethnic groups with Bangladeshi (7%), and African (7%) being particularly large groups within these."
+  },
+  {
+    "objectID": "posts/demographics/index.html#ethnicity-varies-substantially-within-camden-with-some-areas-being-much-more-diverse-than-others",
+    "href": "posts/demographics/index.html#ethnicity-varies-substantially-within-camden-with-some-areas-being-much-more-diverse-than-others",
+    "title": "JSNA Summary",
+    "section": "Ethnicity varies substantially within Camden, with some areas being much more diverse than others",
+    "text": "Ethnicity varies substantially within Camden, with some areas being much more diverse than others"
+  },
+  {
+    "objectID": "posts/demographics/index.html#deprivation",
+    "href": "posts/demographics/index.html#deprivation",
+    "title": "JSNA Summary",
+    "section": "Deprivation",
+    "text": "Deprivation"
   },
   {
     "objectID": "posts/life_expectancy/index.html#findings",
@@ -249,7 +298,7 @@
     "href": "support.html",
     "title": "Support",
     "section": "",
-    "text": "Finding data\n    Locating and understanding data.\n    Finding data\n  \n\n\n\n\n  \n    Applying evidence\n    Making evidence based decisions.\n    Applying evidence\n  \n\n\n\n\n  \n    Concepts\n    Understand concepts such as health inequalities.\n    Learn more\n  \n\n\n\n\n\n\n\n\n\n\n\n  \n    Evaluating services\n    How to assess if services are effective and impactful.\n    Explore data\n  \n\n\n\n\n  \n    Course\n    Undertake an online course on the effective use of data.\n    Get started\n  \n\n\n\n\n\n\n\n Back to top"
+    "text": "Finding data\n    Locate, understand, and use data.\n    Finding data\n  \n\n\n\n\n  \n    Applying evidence\n    Evidence based decision making in practice.\n    Applying evidence\n  \n\n\n\n\n  \n    Concepts\n    Understand concepts such as health inequalities.\n    Learn more\n  \n\n\n\n\n\n\n\n\n\n\n\n  \n    Evaluating services\n    How to assess if services are effective and impactful.\n    Explore data\n  \n\n\n\n\n  \n    Course\n    Undertake an online course on the effective use of data.\n    Get started\n  \n\n\n\n\n\n\n\n Back to top"
   },
   {
     "objectID": "themes/healthy_people/frailty_and_falls.html",

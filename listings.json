@@ -15,6 +15,7 @@
       "/posts/cancer/index.html",
       "/posts/child_obesity/index.html",
       "/posts/falls/index.html",
+      "/posts/demographics/index.html",
       "/posts/mental_health/index.html",
       "/posts/life_expectancy/index.html"
     ]
@@ -24,6 +25,7 @@
     "items": [
       "/posts/cancer/index.html",
       "/posts/child_obesity/index.html",
+      "/posts/demographics/index.html",
       "/posts/falls/index.html",
       "/posts/life_expectancy/index.html",
       "/posts/mental_health/index.html"
