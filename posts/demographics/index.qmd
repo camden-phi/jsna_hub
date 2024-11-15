@@ -1,0 +1,339 @@
+---
+title: "Demographics"
+subtitle: "A comphresive summary of Camden's current and projected population"
+author: "Camden Public Health Intelligence"
+abstract: "Camden's population is a diverse and dynamic community with a plethora of ethnicities, languages, and backgrounds. With many universities and global employers the borough experiences high population turnover. Camden is also geographically varied, incorporating dense inner-city and large open parkland."
+date: today
+execute:
+  echo: false
+  warning: false
+format:
+  html:
+    custom-type: "Briefing {{< fa file >}} | Lives {{< fa heart-pulse >}}"
+    keywords: [obesity, cancer]
+    categories:
+     - Demographics & population groups
+bibliography: references.bib
+csl: bmj.csl
+---
+
+<!-- pptx: -->
+
+<!--   reference-doc: hwb_template.pptx -->
+
+<!--   slide-number: true -->
+
+<!--   output-file: index.pptx -->
+
+```{r}
+knitr::opts_chunk$set(dev = "ragg_png",
+                      dpi = 400)
+
+if(knitr::is_html_output()) {
+  # If HTML format make text elements the following sizes
+  format_vars <- list(title = 12, text = 10, caption = 8, width = 24,
+                      map_titles = 1, map_legend = 0.7, map_caption = 0.4)
+} else {
+  # If not HTML use these
+  format_vars <- list(title = 22, text = 18, caption = 12, width = 28,
+                      map_titles = 2.5, map_legend = 2, map_caption = 1.5)
+}
+
+colours <- c("#57B9BC", "#3C5073", "#B9BF61", "#935992", "#F2959B")
+```
+
+# Introduction {background-image="www/background_olive_full.png"}
+
+This JSNA summary provides a concise overview of residents of Camden. It presents data on the size and structure of the population, and a range of groups within it, for example different ethnic groups, as well as projections of how the population may change in the future.
+
+`r if(knitr::is_html_output()) "::: {.callout-tip}"`
+
+Camden's Joint Strategic Needs Assessment explores the health and wellbeing of the borough's residents and highlights areas of good practice and where opportunities to do more exist, including tacking inequalities. The JSNA helps public bodies decide what type of local services to commission.
+
+`r if(knitr::is_html_output()) ":::"`
+
+# Population {background-image="www/background_navy_full.png"}
+
+### Camden's population has fallen but is expected to rebound {background-image="www/background_olive.png"}
+
+`r if(!knitr::is_html_output()) "::: columns\n::: {.column width='50%'}"`
+
+```{r}
+library(dplyr)
+library(tidyr)
+library(readxl)
+library(janitor)
+library(ggplot2)
+library(marquee)
+library(scales)
+
+pop_total <- read_excel("data/Identified Capacity 10-year migration.xlsx",
+                        sheet = "persons", .name_repair = "universal") %>%
+  filter(la.name == "Camden") %>%
+  pivot_longer(cols = -c(gss.code:age), names_to = "year")
+pop_females <- read_excel("data/Identified Capacity 10-year migration.xlsx", sheet = "females", .name_repair = "universal") %>%
+  filter(la.name == "Camden") %>%
+  pivot_longer(cols = -c(gss.code:age), names_to = "year")
+pop_males <- read_excel("data/Identified Capacity 10-year migration.xlsx", sheet = "males", .name_repair = "universal") %>%
+  filter(la.name == "Camden") %>%
+  pivot_longer(cols = -c(gss.code:age), names_to = "year")
+
+pop <- bind_rows(pop_total, pop_females, pop_males) %>%
+  mutate(year = as.integer(sub("\\...", "", year)))
+
+pop %>%
+  filter(ward.name == "Borough Total", sex == "persons") %>%
+  group_by(year) %>%
+  summarise(value = sum(value)) %>%
+  ungroup() %>%
+  mutate(projection = ifelse(year > 2023, "Projection", "Estimate")) %>%
+  ggplot(aes(x = year, y = value, group = 1, colour = projection)) +
+  geom_line(linewidth = 2) +
+  geom_text(data=. %>% filter(year %in% c(2011, 2020, 2030, 2040)),
+            aes(label = comma(round(value, 0))),
+            position = position_nudge(0, -25000),
+            show.legend=FALSE, fontface = "bold") +
+  scale_color_manual(values = colours) +
+  labs(title = "**Population of Camden**",
+       subtitle = "**Camden's** population has fallen based on recent {.#57B9BC **estimates**} but is {.#3C5073 **projected**} to rebound and grow in the future. The 2021 census found Camden's population was substantially lower than expected.",
+       caption = "*Source: GLA*") +
+  scale_y_continuous(label = comma, limits = c(100000, NA)) +
+  theme_minimal() +
+  theme(legend.position="none",
+        legend.title = element_blank(),
+        plot.title = element_marquee(size = format_vars$title, family = "Karla", width = 1),
+        plot.subtitle = element_marquee(family = "Monserrat-Regular", colour = "#4A4A49", width = 1),
+        plot.caption = element_marquee(colour = "#4A4A49", size = format_vars$caption, width = 1),
+        text = element_text(family = "Montserrat-Thin", size = format_vars$text),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank())
+
+```
+
+`r if(!knitr::is_html_output()) ":::\n::: {.column width='50%'}"`
+
+Camden's population slowly fell until around 2020 when it started to increase again, with further rises predicted. While the size of the population has fluctuated by relatively small amounts, the individuals that comprise the population change frequently with Camden having a high rate of migration within the UK and internationally.
+
+##### Note on the 2021 Census {.smaller}
+
+Prior to the 2021 Census Camden was estimated to have a population of around 280,000 based on projections from the 2011 Census. The 2021 Census found the population was substantially lower at 220,000. This may have happened for a number of reasons, such as temporary relocation away from the borough during the Covid-19 pandemic with some evidence this is now reversing.[@populatia] Camden Council's position is that the Census likely underestimates the actual population and instead generally uses sources such as GLA's population estimates. [@demograp] It can be unclear when indicators are using the high or low version of the population and consequently there can be substantial variation in some indicators depending on source, version, or between time periods even where there has been little change in the count of a metric.
+
+`r if(!knitr::is_html_output()) ":::\n:::"`
+
+### Camden's population is ageing, though young adults will remain the largest group
+
+`r if(!knitr::is_html_output()) "::: columns\n::: {.column width='50%'}"`
+
+```{r}
+library(lemon)
+library(gganimate)
+pop %>%
+  filter(ward.name == "Borough Total", sex != "persons",
+         year %in% c(2013, 2023, 2033, 2041)) %>%
+  mutate(age = as.integer(age)) %>%
+  ggplot(aes(y = ifelse(test = sex == "male", yes = -value, no = value),
+             x = age, fill = sex)) +
+    geom_area() +
+  coord_flip() +
+  scale_y_symmetric(labels = abs) +
+  scale_x_continuous(breaks = seq(0, 100, 10)) +
+  scale_fill_manual(values = colours) +
+  labs(x = element_blank(), y = element_blank(),
+       title = "Camden's Population in {next_state}") +
+  annotate("text", x = 85, y = -2000, label = "Males") +
+  annotate("text", x = 85, y = 2000, label = "Females") +
+  theme_minimal() +
+  theme(legend.position="none",
+        plot.title = element_text(size = format_vars$title),
+        plot.subtitle = element_text(colour = "#4A4A49"),
+        plot.caption = element_text(colour = "#4A4A49", size = format_vars$caption),
+        text = element_text(size = format_vars$text),
+        panel.grid.minor = element_blank(),
+        panel.grid.major = element_line(colour = "grey", linewidth = 0.2)) #+
+  #transition_states(year)
+```
+
+`r if(!knitr::is_html_output()) ":::\n::: {.column width='50%'}"`
+
+```{r}
+pop_pct <- pop %>%
+  filter(ward.name == "Borough Total", sex == "persons",
+         year %in% c(2013, 2023, 2033, 2041)) %>%
+  mutate(age_group = case_when(age < 18 ~ "Under 18",
+                               age < 25 ~ "18 - 24",
+                               age < 35 ~ "25 - 34",
+                               age < 65 ~ "35 - 64",
+                               age >= 65 ~ "65+")) %>%
+  group_by(year) %>%
+  mutate(total_pop = sum(value)) %>%
+  ungroup() %>%
+  group_by(year, age_group) %>%
+  summarise(value = sum(value),
+            pct = value / first(total_pop) * 100)
+```
+
+The composition of Camden's population has changed considerably and this is expected to continue. Between 2013 and 2023 the proportion of residents aged under 18 fell from `r pop_pct[pop_pct$year == 2013 & pop_pct$age_group == "Under 18", "pct"]`% to `r pop_pct[pop_pct$year == 2023 & pop_pct$age_group == "Under 18", "pct"]`% and it is expected to fall further to `r pop_pct[pop_pct$year == 2041 & pop_pct$age_group == "Under 18", "pct"]`% by 2041. Conversely, the proportion of residents aged 65 and over is expected to rise from `r pop_pct[pop_pct$year == 2023 & pop_pct$age_group == "65+", "pct"]`% in 2023 to `r pop_pct[pop_pct$year == 2041 & pop_pct$age_group == "65+", "pct"]`% by 2041. The proportion of the population of working is age is expected to remain relatively constant.
+
+`r if(!knitr::is_html_output()) ":::\n:::"`
+
+# Ethnicity
+
+## Camden's is one of the most diverse places in the country, though the majority of the population identify as White
+
+`r if(!knitr::is_html_output()) "::: columns\n::: {.column width='50%'}"`
+
+```{r}
+library(readr)
+library(treemapify)
+library(glue)
+
+eth <- read_csv("data/eth_lbc_ward22.csv") %>%
+  select(DATE, GEOGRAPHY_CODE, GEOGRAPHY_NAME, C2021_ETH_20_NAME, MEASURES_NAME, OBS_VALUE) %>%
+  pivot_wider(names_from = MEASURES_NAME, values_from = OBS_VALUE) %>%
+  mutate(narrow = sub(".*:", "", C2021_ETH_20_NAME),
+         broad = sub(":.*", "", C2021_ETH_20_NAME))
+
+lbc_eth_broad <- eth %>%
+  filter(broad == narrow) %>%
+  group_by(broad, narrow) %>%
+  summarise(Value = sum(Value)) %>%
+  ungroup() %>%
+  mutate(pct = signif(Value / sum(Value) * 100, digits = 0))
+
+lbc_eth_narrow <- eth %>%
+  filter(broad != "Total", broad != narrow) %>%
+  group_by(broad, narrow) %>%
+  summarise(Value = sum(Value)) %>%
+  ungroup() %>%
+  mutate(pct = signif(Value / sum(Value) * 100, digits = 0))
+
+lbc_eth_narrow %>%
+  filter(broad != "Total") %>%
+  ggplot(aes(area = Value, fill = narrow,
+                    label = narrow, subgroup = broad)) +
+  geom_treemap() +
+  geom_treemap_subgroup_border(colour = "white", size = 5) +
+  geom_treemap_subgroup_text(place = "centre", grow = TRUE, reflow = T,
+                             alpha = 0.25, colour = "black",
+                             fontface = "italic") +
+  geom_treemap_text(colour = "white", place = "centre", reflow = T,
+                    size = 15, grow = F) + 
+  scale_fill_manual(values = rep(colours, n_distinct(eth$broad))) +
+  labs(title = "**Ethnicity within Camden**",
+       caption = paste0("*Source: ONS ", Sys.Date(), "*")) +
+  theme_minimal() +
+  theme(legend.position="none",
+        legend.title = element_blank(),
+        plot.title = element_marquee(size = format_vars$title, family = "Karla", width = 1),
+        plot.subtitle = element_marquee(family = "Monserrat-Regular", colour = "#4A4A49", width = 1),
+        plot.caption = element_marquee(colour = "#4A4A49", size = format_vars$caption, width = 1),
+        text = element_text(family = "Montserrat-Thin", size = format_vars$text),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank())
+```
+
+`r if(!knitr::is_html_output()) ":::\n::: {.column width='50%'}"`
+
+Around `r lbc_eth_broad[lbc_eth_broad$broad=="White", "pct"]`% of Camden's population is White, with White British comprising `r lbc_eth_narrow[lbc_eth_narrow$narrow==" English, Welsh, Scottish, Northern Irish or British", "pct"]`%. Outside of the White ethnic group Camden's population is comprised of `r glue_collapse(lbc_eth_broad %>% filter(narrow != "White") %>% glue_data("{narrow} ({pct}%)"), sep = ", ", last = ", and ")` broad ethnic groups with `r glue_collapse(lbc_eth_narrow %>% filter(broad != "White" & narrow != broad) %>% top_n(2) %>% glue_data("{narrow} ({pct}%)"), sep = ", ", last = ", and ")` being particularly large groups within these.
+
+`r if(!knitr::is_html_output()) ":::\n:::"`
+
+## Ethnicity varies substantially within Camden, with some areas being much more diverse than others
+
+`r if(!knitr::is_html_output()) "::: columns\n::: {.column width='50%'}"`
+
+```{r}
+ward_eth_broad <- eth %>%
+  filter(broad == narrow) %>%
+  group_by(broad, GEOGRAPHY_NAME) %>%
+  summarise(Value = sum(Value)) %>%
+  group_by(GEOGRAPHY_NAME) %>%
+  mutate(pct = Value / sum(Value) * 100,
+         GEOGRAPHY_NAME = gsub(" \\(Camden\\)", "", GEOGRAPHY_NAME))
+
+ggplot(ward_eth_broad, aes(x = GEOGRAPHY_NAME, y = pct, fill = broad))+
+  geom_bar(stat="identity", width = .7, lwd = 0.1) +
+  coord_flip() +
+  scale_fill_manual(values = colours) +
+  scale_y_continuous(label = scales::label_number(suffix = "%")) +
+  geom_text(aes(label = paste0(sprintf("%.0f", pct), "%")),
+                position=position_stack(vjust = 0.5), colour = "#FFF", size = 2) +
+  labs(title = "**Ethnicity within Camden**",
+       subtitle = "While **{.#F2959B White}** is the biggest ethnic group in all areas of Camden, there is substantial varation in the proprtion of the population who are **{.#57B9BC Asian, Asian British or Asian Welsh}**, **{.#3C5073 Black, Black British, Black Welsh, Caribbean or African}**, **{.#B9BF61 Mixed or Multiple ethnic groups}**, or **{.#935992 Other ethnic group}**",
+       caption = paste0("*Source: ONS ", Sys.Date(), "*")) +
+  theme_minimal() +
+  theme(legend.position="none",
+        legend.title = element_blank(),
+        plot.title = element_marquee(size = format_vars$title, family = "Karla", width = 1),
+        plot.subtitle = element_marquee(family = "Monserrat-Regular", colour = "#4A4A49", width = 1),
+        plot.caption = element_marquee(colour = "#4A4A49", size = format_vars$caption, width = 1),
+        text = element_text(family = "Montserrat-Thin", size = format_vars$text),
+        panel.grid.minor = element_blank(),
+        panel.grid.major.x = element_blank(),
+        axis.title.y = element_blank(),
+        axis.title.x = element_blank())
+```
+
+`r if(!knitr::is_html_output()) ":::\n::: {.column width='50%'}"`
+
+`r if(!knitr::is_html_output()) ":::\n:::"`
+
+## Language
+
+## Deprivation {background-image="www/background_navy.png"}
+
+```{r}
+#| fig-height: !expr "ifelse(knitr::is_html_output(), 5, 12)"
+
+# Load packages
+library(geojson)
+library(sf)
+library(tmap)
+library(tmaptools)
+library(readxl)
+library(basemaps)
+library(dplyr)
+library(terra)
+
+data_imd <- data.frame(
+  Ward = c("Camden Town","St Pancras & Somers Town",
+           "Kilburn","Regent's Park","Haverstock","King's Cross",
+           "Camden Square","Kentish Town South","Gospel Oak",
+           "Holborn & Covent Garden","Highgate","Bloomsbury","South Hampstead",
+           "Fortune Green","Kentish Town North","West Hampstead",
+           "Primrose Hill","Belsize","Hampstead Town","Frognal"),
+  Neighbourhood = c("Central","Central","West","Central","East","South","East","East","East","South",
+                    "North","South","West","West","East","West","Central","North","North","North"),
+  IMD2019 = c(34.67959603,32.66427904,28.65203805,
+              27.86357177,26.90528555,26.31108348,23.08272254,22.20804812,
+              21.60564129,20.87321646,18.58203058,17.52003194,17.20207198,
+              17.13967743,16.95862687,16.74721356,12.91938201,8.592307606,
+              6.42275788,5.950213381))
+
+shp <- read_sf("wards_lbc_2022.geojson")
+
+shp_data <- left_join(shp, data_imd, by = c("WD22NM"="Ward"))
+
+if(knitr::is_html_output()) {
+  tmap_mode("view")
+} else {
+  tmap_mode("plot")
+}
+
+tm_shape(shp_data) +
+  tm_polygons(col = "IMD2019",
+              palette = c("#57B9BC", "#3C5073"), border.alpha = 0.7, border.col = "#E9ECEF",
+              title = "Deprivation") +
+  tm_layout(frame = FALSE,
+            main.title = "Deprivation Camden, 2022/23", 
+            main.title.fontface = "bold", main.title.size = 1,
+            main.title.fontfamily = "Karla") +
+  tm_legend(fontfamily = "Montserrat", legend.position = c("LEFT", "BOTTOM"), 
+            title.snap.to.legend = T, scale = 0.7, legend.format=list(fun=function(x) paste0(formatC(x, digits=0, format="f"), ""))) +
+  tm_credits("IMD 2019, 2021 LSOA Boundaries  ", size = 0.7, position = c(0.5, 0))
+
+```

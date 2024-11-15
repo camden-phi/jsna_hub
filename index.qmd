@@ -1,7 +1,15 @@
 ---
 toc: false
 search: false
-page-layout: full
+page-layout: custom
+include-in-header:
+  text: |
+    <style type="text/css">
+    .quarto-title-banner {
+      padding-left: 8.3% !important;
+      padding-right: 8.3% !important;
+      }
+    </style>
 title-block-banner: "#A9D6D8"
 title-block-banner-color: "#29344c"
 title: "Explore the distribution and determinants of health and the impact of services on wellbeing in Camden"
@@ -32,6 +40,11 @@ listing:
     max-items: 4
 ---
 
+::: grid
+::: g-col-1
+:::
+
+::: g-col-10
 ::: {layout-ncol="3"}
 ::: col1
 ```{=html}
@@ -70,22 +83,25 @@ listing:
 :::
 :::
 
----
+------------------------------------------------------------------------
 
-::: {.grid}
-
-::: {.g-col-8}
+::: grid
+::: g-col-8
 ### Spotlight
 
 ::: {#spotlight}
 :::
 :::
 
-::: {.g-col-4}
+::: g-col-4
 ### Latest publications
 
 ::: {#latest}
 :::
 :::
+:::
+:::
 
+::: g-col-1
+:::
 :::

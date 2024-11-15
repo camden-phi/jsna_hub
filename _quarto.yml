@@ -6,10 +6,10 @@ website:
   back-to-top-navigation: true
   page-footer:
     center: 
-      - text: "© Camden 2024"
+      - text: "© Camden Health & Wellbeing 2024"
   favicon: camden-logo-white.png
   navbar:
-    background: "#3D5174"
+    background: "#29344C"
     foreground: white
     logo: camden-logo-white.png
     left:
@@ -25,12 +25,12 @@ website:
 
 format:
   html:
-    theme: zephyr
-    css: styles.css
-    toc: true
+    theme: united
+    css: styles/styles.css
     mainfont: Arial
     linkcolor: "#29344c"
     fontcolor: "#4A4949"
 
 editor: visual
 
+freeze: auto

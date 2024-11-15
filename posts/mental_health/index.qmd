@@ -10,9 +10,7 @@ image: www/gpt.jpg
 custom-type: "Data {{< fa chart-simple >}} | Services {{< fa hand-holding-medical >}}"
 keywords: [obesity, cancer]
 categories:
- - Public
- - Health
- - -Data
+ - Mental health & wellbeing
 ---
 
 ## Intro

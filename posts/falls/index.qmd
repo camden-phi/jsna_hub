@@ -7,12 +7,20 @@ abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
 date: today
 bibliography: bibliography.bib
 image: www/gpt.jpg
-custom-type: "Report {{< fa file-waveform >}} | Lives {{< fa heart-pulse >}}"
-keywords: [obesity, cancer]
+custom-type: "HNA {{< fa file-medical >}} | Lives {{< fa heart-pulse >}}"
+keywords: [obesity, cancer, summary, people]
 categories:
- - Public
- - Health
- - -Report
+ - Place profiles
+ - Child & maternal health
+ - Lifestyles & behaviours
+ - Mental health & wellbeing
+ - Older people
+ - Health & care services
+ - Life expectancy & mortality
+ - Sexual & reproductive health
+ - Disease & disability
+ - Wider determinants
+ - Demographics & population groups
 ---
 
 ## Intro

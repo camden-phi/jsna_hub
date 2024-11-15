@@ -1,6 +1,6 @@
 ---
 title: "Evidence based decision making"
-subtitle: "Learn how to understand and apply data"
+subtitle: "Learn how to apply data"
 format:
   html:
     css: include/webex.css

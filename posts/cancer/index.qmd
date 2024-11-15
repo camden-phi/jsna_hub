@@ -7,12 +7,10 @@ abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
 date: today
 bibliography: bibliography.bib
 image: www/gpt.jpg
-custom-type: "Report {{< fa file-waveform >}} | People {{< fa people-group >}}"
+custom-type: "Briefing {{< fa file >}} | People {{< fa people-group >}}"
 keywords: [obesity, cancer]
 categories:
- - Public
- - Health
- - -Report
+ - Disease & disability
 ---
 
 The full report can be access here if you have permission to access it.

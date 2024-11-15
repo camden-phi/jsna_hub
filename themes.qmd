@@ -5,7 +5,7 @@ toc: false
 image: camden-logo-white.png
 listing:
   - id: healthy_people
-    contents: themes/healthy_people/*.qmd
+    contents: posts/*/*.qmd
     type: grid
     fields: [title]  
     sort: "title"
@@ -14,263 +14,68 @@ listing:
     grid-columns: 4
     grid-item-border: false
     image-height: 50px
+    include:
+      keywords: "summary" 
+      custom-type: "*People*"
+  - id: healthy_lives
+    contents: posts/*/*.qmd
+    type: grid
+    fields: [title]  
+    sort: "title"
+    sort-ui: false
+    filter-ui: false
+    grid-columns: 4
+    grid-item-border: false
+    image-height: 50px
+    include:
+      keywords: "summary" 
+      custom-type: "*Lives*"
+  - id: healthy_places
+    contents: posts/*/*.qmd
+    type: grid
+    fields: [title]  
+    sort: "title"
+    sort-ui: false
+    filter-ui: false
+    grid-columns: 4
+    grid-item-border: false
+    image-height: 50px
+    include:
+      keywords: "summary" 
+      custom-type: "*Places*"
+  - id: services
+    contents: posts/*/*.qmd
+    type: grid
+    fields: [title]  
+    sort: "title"
+    sort-ui: false
+    filter-ui: false
+    grid-columns: 4
+    grid-item-border: false
+    image-height: 50px
+    include:
+      keywords: "summary" 
+      custom-type: "*Services*"
 ---
+
+Summaries are split into four domains; [Healthy People], [Healthy Lives], [Healthy Places], and [Services].
 
 ## Healthy People
 
 ::: {#healthy_people}
 :::
 
-::: {layout-ncol="4"}
-::: col1
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <img src="www/health-icons-filled/people/male_and_female.svg" alt="icon">
-    <a href = "themes/demographics.qmd">Demographics</a>
-</div>
-</div>
-```
-:::
-
-::: col2
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Falls and frailty</a>
-</div>
-</div>
-```
-:::
-
-::: col3
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Respiratory condtions</a>
-</div>
-</div>
-```
-:::
-
-::: col4
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Cancer</a>
-</div>
-</div>
-```
-:::
-:::
-
-::: {layout-ncol="4"}
-::: col1
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Cardiovascular conditions</a>
-</div>
-</div>
-```
-:::
-
-::: col2
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Dementia</a>
-</div>
-</div>
-```
-:::
-
-::: col3
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Diabetes</a>
-</div>
-</div>
-```
-:::
-
-::: col4
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Musculoskeletal conditions</a>
-</div>
-</div>
-```
-:::
-:::
-
-::: {layout-ncol="4"}
-::: col1
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Learning disabilities</a>
-</div>
-</div>
-```
-:::
-
-::: col2
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Mental health</a>
-</div>
-</div>
-```
-:::
-
-::: col3
-```{=html}
-<div class="card">
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Mortality & life expectancy</a>
-</div>
-</div>
-```
-:::
-
-::: col4
-:::
-:::
-
 ## Healthy Lives
 
-::: {layout-ncol="4"}
-::: col1
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Substance abuse</a>
-</div>
-```
-:::
-
-::: col2
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Physical activity</a>
-</div>
-```
-:::
-
-::: col3
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Sexual health</a>
-</div>
-```
-:::
-
-::: col4
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Maternal health</a>
-</div>
-```
-:::
-
-::: col4
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Contagious disease</a>
-</div>
-```
-:::
+::: {#healthy_lives}
 :::
 
 ## Healthy Places
 
-::: {layout-ncol="4"}
-::: col1
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Built environment</a>
-</div>
-```
-:::
-
-::: col2
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Natural envrionment</a>
-</div>
-```
-:::
-
-::: col3
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Economy and employment</a>
-</div>
-```
-:::
-
-::: col4
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Living conditions</a>
-</div>
-```
-:::
-:::
-
-::: {layout-ncol="4"}
-::: col1
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Crime</a>
-</div>
-```
-:::
-
-::: col2
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Air pollution</a>
-</div>
-```
-:::
+::: {#healthy_places}
 :::
 
 ## Services
 
-::: {layout-ncol="4"}
-::: col1
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Public Health services</a>
-</div>
-```
-:::
-
-::: col2
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Social Care</a>
-</div>
-```
-:::
-
-::: col3
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">NHS services</a>
-</div>
-```
-:::
-
-::: col4
-```{=html}
-<div class="card_themes" style="max-width: 20rem;">
-    <a href = "themes/demographics.qmd">Third sector</a>
-</div>
-```
-:::
+::: {#services}
 :::

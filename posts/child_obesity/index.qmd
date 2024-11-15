@@ -7,12 +7,10 @@ abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusm
 date: today
 bibliography: bibliography.bib
 image: www/gpt.jpg
-custom-type: "Report {{< fa file-waveform >}} | People {{< fa people-group >}}"
+custom-type: "HNA {{< fa file-medical >}} | People {{< fa people-group >}}"
 keywords: [obesity, cancer]
 categories:
- - Public
- - Health
- - -Report
+ - Child & maternal health
 ---
 
 ## Intro
