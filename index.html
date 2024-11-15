@@ -110,7 +110,7 @@ ul.task-list li input[type="checkbox"] {
       valueNames: ['listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       page: 4,
     pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-freeze","listing-language","listing-toc","listing-title","listing-subtitle","listing-author","listing-abstract-title","listing-abstract","listing-date","listing-bibliography","listing-image","listing-custom-type","listing-keywords","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-date-format","listing-execute","listing-csl"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-editor","listing-freeze","listing-language","listing-title","listing-subtitle","listing-author","listing-abstract-title","listing-abstract","listing-date","listing-bibliography","listing-image","listing-custom-type","listing-keywords","listing-categories","listing-path","listing-outputHref","listing-date-modified","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-execute","listing-csl"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -144,6 +144,12 @@ ul.task-list li input[type="checkbox"] {
 background: #A9D6D8;
       }
 </style>
+<style type="text/css">
+.quarto-title-banner {
+  padding-left: 8.3% !important;
+  padding-right: 8.3% !important;
+  }
+</style>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
@@ -175,10 +181,10 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles/styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed fullcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top quarto-banner">
@@ -226,16 +232,16 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-page">
+<header id="title-block-header" class="quarto-title-block default">
+  <div class="quarto-title-banner">
+    <div class="quarto-title column-body">
       <h1 class="title">Explore the distribution and determinants of health and the impact of services on wellbeing in Camden</h1>
             <p class="subtitle lead">Maximise the impact of your service with evidence based decison making</p>
                       </div>
   </div>
     
   
-  <div class="quarto-title-meta column-page">
+  <div class="quarto-title-meta">
 
       
     
@@ -243,17 +249,20 @@ window.Quarto = {
     </div>
     
   
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+  </header><div id="quarto-content" class="quarto-container page-layout-custom page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
 <!-- main -->
-<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
 
 
 
 
+<div class="grid">
+<div class="g-col-1">
+
+</div>
+<div class="g-col-10">
 <div>
 
 </div>
@@ -262,7 +271,7 @@ window.Quarto = {
 <div class="col1 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="card_front border-primary mb-3" style="max-width: 20rem;">
   <div class="card-body">
-    <h4 class="card-subtitle mb-2 anchored"><b>Data</b></h4>
+    <h4 class="card-subtitle mb-2"><b>Data</b></h4>
     <p class="card-text">Explore public health related data covering the population of Camden.</p>
     <a class="btn btn-primary" href="./data.html" role="button">Explore data</a>
   </div>
@@ -271,7 +280,7 @@ window.Quarto = {
 <div class="col2 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="card_front border-primary mb-3" style="max-width: 20rem;">
   <div class="card-body">
-    <h4 class="card-subtitle mb-2 anchored"><b>Reports</b></h4>
+    <h4 class="card-subtitle mb-2"><b>Reports</b></h4>
     <p class="card-text">Explore our catalogue of research and analytics by theme.</p>
     <a class="btn btn-primary" href="./reports.html" role="button">View reports</a>
   </div>
@@ -280,7 +289,7 @@ window.Quarto = {
 <div class="col3 quarto-layout-cell" style="flex-basis: 33.3%;justify-content: flex-start;">
 <div class="card_front border-primary mb-3" style="max-width: 20rem;">
   <div class="card-body">
-    <h4 class="card-subtitle mb-2 anchored"><b>Support</b></h4>
+    <h4 class="card-subtitle mb-2"><b>Support</b></h4>
     <p class="card-text">Our tools and guides can help you apply evidence in your work.</p>
     <a class="btn btn-primary" href="./support.html" role="button">Learn more</a>
   </div>
@@ -291,10 +300,10 @@ window.Quarto = {
 <hr>
 <div class="grid">
 <section id="spotlight" class="level3 g-col-8">
-<h3 class="anchored" data-anchor-id="spotlight">Spotlight</h3>
+<h3 data-anchor-id="spotlight">Spotlight</h3>
 <div id="listing-spotlight" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1721296284326" data-listing-reading-time-sort="2" data-listing-word-count-sort="388">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1731688240818" data-listing-reading-time-sort="2" data-listing-word-count-sort="388">
 <a href="./support/courses/evidenced_based_working.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <div class="card-body post-contents">
@@ -302,7 +311,7 @@ window.Quarto = {
 Evidence based decision making
 </h5>
 <div class="card-subtitle listing-subtitle">
-Learn how to understand and apply data
+Learn how to apply data
 </div>
 </div>
 </div>
@@ -322,7 +331,7 @@ View summaries of areas in Camden
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1721296215073" data-listing-reading-time-sort="2" data-listing-word-count-sort="344">
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1731672760240" data-listing-reading-time-sort="1" data-listing-word-count-sort="23">
 <a href="./themes.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left borderless">
 <div class="card-body post-contents">
@@ -343,19 +352,19 @@ No matching items
 </div>
 </section>
 <section id="latest-publications" class="level3 g-col-4">
-<h3 class="anchored" data-anchor-id="latest-publications">Latest publications</h3>
+<h3 data-anchor-id="latest-publications">Latest publications</h3>
 <div id="listing-latest" class="quarto-listing quarto-listing-container-custom">
 
-  <a href="./posts/cancer/index.html"><b>Cancer [Public Summary]</b> <i><small>(Nov 14, 2024)</small></i></a>
+  <a href="./posts/cancer/index.html"><b>Cancer [Public Summary]</b> <i><small>(Nov 15, 2024)</small></i></a>
     <br><p></p>
 
-  <a href="./posts/child_obesity/index.html"><b>Child Obesity</b> <i><small>(Nov 14, 2024)</small></i></a>
+  <a href="./posts/child_obesity/index.html"><b>Child Obesity</b> <i><small>(Nov 15, 2024)</small></i></a>
     <br><p></p>
 
-  <a href="./posts/falls/index.html"><b>Falls</b> <i><small>(Nov 14, 2024)</small></i></a>
+  <a href="./posts/demographics/index.html"><b>Demographics</b> <i><small>(Nov 15, 2024)</small></i></a>
     <br><p></p>
 
-  <a href="./posts/demographics/index.html"><b>JSNA Summary</b> <i><small>(Nov 14, 2024)</small></i></a>
+  <a href="./posts/falls/index.html"><b>Falls</b> <i><small>(Nov 15, 2024)</small></i></a>
     <br><p></p>
 
 <div class="listing-no-matching d-none">
@@ -364,11 +373,16 @@ No matching items
 </div>
 </section>
 </div>
+</div>
+<div class="g-col-1">
+
+</div>
+</div>
 
 
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
