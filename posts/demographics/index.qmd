@@ -4,12 +4,16 @@ subtitle: "A comphresive summary of Camden's current and projected population"
 author: "Camden Public Health Intelligence"
 abstract: "Camden's population is a diverse and dynamic community with a plethora of ethnicities, languages, and backgrounds. With many universities and global employers the borough experiences high population turnover. Camden is also geographically varied, incorporating dense inner-city and large open parkland."
 date: today
+custom-type: "Briefing {{< fa file >}} | Lives {{< fa heart-pulse >}}"
 execute:
   echo: false
   warning: false
 format:
+  pptx:
+    reference-doc: hwb_template.pptx
+    slide-number: true
+    output-file: index.pptx
   html:
-    custom-type: "Briefing {{< fa file >}} | Lives {{< fa heart-pulse >}}"
     keywords: [obesity, cancer]
     categories:
      - Demographics & population groups
